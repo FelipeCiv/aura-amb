@@ -1,13 +1,30 @@
 import { motion } from "framer-motion";
-import ambLogo from "@/assets/amb-logo.png";
+import heroMentor from "@/assets/hero-mentor.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0 bg-radial-gold opacity-60" />
+      
+      {/* Mentor background image blending with background */}
+      <div className="absolute inset-0">
+        <img
+          src={heroMentor}
+          alt=""
+          className="absolute right-0 top-1/2 -translate-y-1/2 h-full w-auto max-w-none opacity-30 md:opacity-40 object-cover"
+          style={{
+            maskImage: "radial-gradient(ellipse 80% 90% at 70% 50%, black 20%, transparent 70%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 90% at 70% 50%, black 20%, transparent 70%)",
+          }}
+          width={1024}
+          height={1024}
+        />
+      </div>
+
+      <div className="absolute inset-0 bg-radial-gold opacity-40" />
       <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-transparent" />
 
       {/* Decorative lines */}
       <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-gold/10 to-transparent" />
@@ -20,36 +37,51 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="flex flex-col items-center gap-8"
         >
-          <motion.img
-            src={ambLogo}
-            alt="AMB - Audiovisual Marketing Branding"
-            className="w-48 md:w-64 lg:w-72 drop-shadow-2xl"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, delay: 0.2 }}
-          />
-
-          <div className="divider-gold w-32 mx-auto" />
-
           <motion.p
             className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-gold-light/80"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.3 }}
           >
             Mentoria Exclusiva
           </motion.p>
 
-          <motion.h1
-            className="text-3xl md:text-5xl lg:text-6xl font-display font-bold leading-tight max-w-4xl"
+          {/* Large VIP Title with hover gold effect */}
+          <motion.div
+            className="group cursor-default"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.5 }}
+          >
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tight leading-none transition-all duration-700">
+              <span className="block text-foreground group-hover:text-gold-gradient transition-all duration-700 relative">
+                <span className="relative z-10 group-hover:[background:linear-gradient(135deg,hsl(43,80%,70%),hsl(43,72%,55%),hsl(43,60%,38%))] group-hover:[-webkit-background-clip:text] group-hover:[background-clip:text] group-hover:[-webkit-text-fill-color:transparent]">
+                  AMB
+                </span>
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl bg-gold/20 -z-10" />
+              </span>
+            </h1>
+            <div className="mt-3 flex items-center justify-center gap-4 md:gap-6">
+              <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-r from-transparent to-gold/40 group-hover:to-gold/80 transition-all duration-700" />
+              <span className="font-body text-xs md:text-sm tracking-[0.4em] uppercase text-muted-foreground group-hover:text-gold-light transition-colors duration-700">
+                Audiovisual — Marketing — Branding
+              </span>
+              <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-l from-transparent to-gold/40 group-hover:to-gold/80 transition-all duration-700" />
+            </div>
+          </motion.div>
+
+          <div className="divider-gold w-32 mx-auto" />
+
+          <motion.h2
+            className="text-xl md:text-2xl lg:text-3xl font-display font-semibold leading-tight max-w-3xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
+            transition={{ delay: 0.9, duration: 0.8 }}
           >
             <span className="text-gold-gradient">Transforme</span>{" "}
             <span className="text-foreground">seu negócio através do</span>{" "}
-            <span className="text-gold-gradient">Audiovisual, Marketing e Branding</span>
-          </motion.h1>
+            <span className="text-gold-gradient">poder estratégico</span>
+          </motion.h2>
 
           <motion.p
             className="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed font-light"
