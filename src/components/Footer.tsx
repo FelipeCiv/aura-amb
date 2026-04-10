@@ -1,12 +1,11 @@
 import { Instagram } from "lucide-react";
-import ambLogo from "@/assets/amb-logo.png";
 
 const Footer = () => {
   return (
     <footer className="relative py-12 border-t border-gold-muted/20">
       <div className="container px-6">
         <div className="flex flex-col items-center gap-6">
-          <img src={ambLogo} alt="AMB" className="w-24 opacity-60" />
+          <h3 className="text-2xl font-display font-bold text-gold-gradient tracking-wide">AMB</h3>
           <a
             href="https://instagram.com/_emersonrf"
             target="_blank"
