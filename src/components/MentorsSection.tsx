@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram } from "lucide-react";
+import { Instagram, Camera } from "lucide-react";
 
 const MentorsSection = () => {
   return (
@@ -83,5 +83,4 @@ const MentorsSection = () => {
   );
 };
 
-import { Camera } from "lucide-react";
 export default MentorsSection;
