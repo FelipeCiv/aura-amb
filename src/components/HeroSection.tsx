@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroMentor from "@/assets/hero-mentor.png";
+import heroDuo from "@/assets/hero-duo.png";
 
 const HeroSection = () => {
   return (
@@ -10,14 +10,14 @@ const HeroSection = () => {
       {/* Mentor background image blending with background */}
       <div className="absolute inset-0">
         <img
-          src={heroMentor}
+          src={heroDuo}
           alt=""
-          className="absolute right-0 top-1/2 -translate-y-1/2 h-full w-auto max-w-none opacity-30 md:opacity-40 object-cover"
+          className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full h-full object-cover opacity-25 md:opacity-35"
           style={{
-            maskImage: "radial-gradient(ellipse 80% 90% at 70% 50%, black 20%, transparent 70%)",
-            WebkitMaskImage: "radial-gradient(ellipse 80% 90% at 70% 50%, black 20%, transparent 70%)",
+            maskImage: "radial-gradient(ellipse 70% 80% at 50% 50%, black 10%, transparent 65%)",
+            WebkitMaskImage: "radial-gradient(ellipse 70% 80% at 50% 50%, black 10%, transparent 65%)",
           }}
-          width={1024}
+          width={1536}
           height={1024}
         />
       </div>
