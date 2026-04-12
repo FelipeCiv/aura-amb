@@ -53,13 +53,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.5 }}
           >
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tight leading-none transition-all duration-700">
-              <span className="block text-foreground group-hover:text-gold-gradient transition-all duration-700 relative">
-                <span className="relative z-10 group-hover:[background:linear-gradient(135deg,hsl(43,80%,70%),hsl(43,72%,55%),hsl(43,60%,38%))] group-hover:[-webkit-background-clip:text] group-hover:[background-clip:text] group-hover:[-webkit-text-fill-color:transparent]">
-                  AMB
-                </span>
-                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl bg-gold/20 -z-10" />
+            <h1 className="relative inline-block text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tight leading-none transition-transform duration-700 group-hover:scale-110">
+              <span className="block relative z-10 text-foreground transition-opacity duration-700 group-hover:opacity-0">
+                AMB
               </span>
+              <span className="absolute top-0 left-0 w-full h-full z-20 text-gold-gradient opacity-0 transition-opacity duration-700 group-hover:opacity-100 pointer-events-none text-center">
+                AMB
+              </span>
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl bg-gold/30 -z-10 pointer-events-none" />
             </h1>
             <div className="mt-3 flex items-center justify-center gap-4 md:gap-6">
               <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-r from-transparent to-gold/40 group-hover:to-gold/80 transition-all duration-700" />
