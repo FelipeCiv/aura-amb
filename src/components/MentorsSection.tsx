@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
-import mentorEmerson from "@/assets/mentor-emerson.png";
-import mentorRafael from "@/assets/mentor-rafael.png";
+import mentorEmerson from "@/assets/mentor_emerson.jpg";
+import mentorRafael from "@/assets/mentor_rafael.png";
 
 const MentorsSection = () => {
   return (
@@ -57,8 +57,8 @@ const MentorsSection = () => {
                 @_emersonrf
               </a>
               <p className="text-muted-foreground font-light leading-relaxed text-sm md:text-base">
-                Criador da Mentoria AMB e especialista em Marketing e Branding. 
-                Emerson ensina como se posicionar no mercado digital, construir uma marca forte 
+                Criador da Mentoria AMB e especialista em Marketing e Branding.
+                Emerson ensina como se posicionar no mercado digital, construir uma marca forte
                 e criar estratégias de vendas que realmente funcionam.
               </p>
             </div>
@@ -86,8 +86,8 @@ const MentorsSection = () => {
               <h3 className="text-2xl font-display font-bold text-foreground mb-1">Rafael Duarte</h3>
               <p className="text-primary/60 text-xs font-body tracking-[0.2em] uppercase mb-3">Sócio & Especialista Audiovisual</p>
               <p className="text-muted-foreground font-light leading-relaxed text-sm md:text-base">
-                Responsável pelas aulas de edição e criação audiovisual. 
-                Com domínio completo das principais ferramentas do mercado, ele vai te ensinar 
+                Responsável pelas aulas de edição e criação audiovisual.
+                Com domínio completo das principais ferramentas do mercado, ele vai te ensinar
                 a criar conteúdos profissionais que captam atenção e elevam sua comunicação visual.
               </p>
             </div>
