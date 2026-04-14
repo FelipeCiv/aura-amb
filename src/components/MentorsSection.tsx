@@ -76,15 +76,24 @@ const MentorsSection = () => {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-primary/30 mb-6 group-hover:border-primary/60 transition-all duration-500">
                 <img
                   src={mentorRafael}
-                  alt="Rafael Duarte - Especialista Audiovisual"
+                  alt="Vinicius Barros - Especialista Audiovisual"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   width={768}
                   height={768}
                 />
               </div>
-              <h3 className="text-2xl font-display font-bold text-foreground mb-1">Rafael Duarte</h3>
+              <h3 className="text-2xl font-display font-bold text-foreground mb-1">Vinicius Barros</h3>
               <p className="text-primary/60 text-xs font-body tracking-[0.2em] uppercase mb-3">Sócio & Especialista Audiovisual</p>
+              <a
+                href="https://instagram.com/viniciusunico1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary/80 hover:text-primary transition-colors text-sm font-body mb-6"
+              >
+                <Instagram className="w-4 h-4" />
+                @viniciusunico1
+              </a>
               <p className="text-muted-foreground font-light leading-relaxed text-sm md:text-base">
                 Responsável pelas aulas de edição e criação audiovisual.
                 Com domínio completo das principais ferramentas do mercado, ele vai te ensinar
