@@ -57,10 +57,10 @@ const HeroSection = () => {
               <span className="block relative z-10 text-foreground transition-opacity duration-700 group-hover:opacity-0">
                 AMB
               </span>
-              <span className="absolute top-0 left-0 w-full h-full z-20 text-gold-gradient opacity-0 transition-opacity duration-700 group-hover:opacity-100 pointer-events-none text-center">
+              <span className="absolute top-0 left-0 w-full h-full z-20 bg-gradient-to-br from-[#FCFAF5] via-[#E8E0C5] to-[#CDBD9A] text-transparent bg-clip-text opacity-0 transition-opacity duration-700 group-hover:opacity-100 pointer-events-none text-center">
                 AMB
               </span>
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl bg-gold/30 -z-10 pointer-events-none" />
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-2xl bg-[#E8E0C5]/30 -z-10 pointer-events-none" />
             </h1>
             <div className="mt-3 flex items-center justify-center gap-4 md:gap-6">
               <div className="h-px flex-1 max-w-16 md:max-w-24 bg-gradient-to-r from-transparent to-gold/40 group-hover:to-gold/80 transition-all duration-700" />
