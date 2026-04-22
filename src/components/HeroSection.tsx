@@ -12,7 +12,7 @@ const HeroSection = () => {
         <img
           src={heroDuo}
           alt=""
-          className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full h-full object-cover opacity-70"
+          className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full h-full object-cover opacity-40"
           style={{
             maskImage: "radial-gradient(ellipse 75% 85% at 50% 50%, black 15%, transparent 75%)",
             WebkitMaskImage: "radial-gradient(ellipse 75% 85% at 50% 50%, black 15%, transparent 75%)",
