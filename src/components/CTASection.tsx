@@ -33,7 +33,7 @@ const CTASection = () => {
           <div className="relative inline-block">
             <div className="absolute -inset-1 bg-gold-gradient rounded-sm opacity-20 blur-lg" />
             <motion.a
-              href="https://instagram.com/_emersonrf"
+              href="https://pay.kiwify.com.br/uaV3FLB"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 bg-gold-gradient text-primary-foreground font-body font-semibold text-base md:text-lg tracking-wider uppercase px-12 py-5 rounded-sm hover:shadow-gold transition-all duration-500"
@@ -46,7 +46,7 @@ const CTASection = () => {
           </div>
 
           <p className="text-muted-foreground/60 text-xs mt-6 font-light">
-            Entre em contato pelo Instagram para garantir sua vaga
+            Pagamento 100% seguro via Kiwify
           </p>
         </motion.div>
       </div>

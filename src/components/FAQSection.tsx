@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     question: "Qual a duração da mentoria?",
-    answer: "A mentoria tem um formato intensivo pensado para gerar resultados rápidos. Entre em contato pelo Instagram do Emerson para saber mais detalhes sobre o cronograma atual.",
+    answer: "A mentoria tem um formato intensivo pensado para gerar resultados rápidos. Clique no botão de inscrição para ver todos os detalhes e o cronograma atual.",
   },
   {
     question: "Como posso me inscrever?",
-    answer: "Entre em contato diretamente pelo Instagram @_emersonrf. As vagas são limitadas para garantir um acompanhamento personalizado de qualidade.",
+    answer: "Você pode se inscrever clicando em qualquer botão de 'Garantir Vaga' nesta página. O pagamento é processado de forma segura pela Kiwify.",
   },
 ];
 
